@@ -93,7 +93,7 @@ plugins:
 3. Run ```git add . ``` 
 4. Run ```git commit -m 'Changing theme'``` 
 6. Run ```git push -u origin BRANCH ``` again replacing BRANCH with your branch name
--Note: Use ```theme: THEME_NAME``` instead if the theme is not remote.
+-Note: Use ```theme: THEME_NAME``` instead of ```remote_theme: REMOTE/THEME/LOCATION```if the theme is not remote.
 
 ## Running Jekyll Locally
 Now that the set up done lets take a look at how to run Jekyll Locally
