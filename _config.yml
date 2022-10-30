@@ -20,7 +20,7 @@
 
 title: Chu Hao Wen Resume
 email: chuhaow@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: /comp3040A2Resume # the subpath of your site, e.g. /blog
 url: "https://chuhaow.github.io/comp3040A2Resume" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  chuhaow
 
