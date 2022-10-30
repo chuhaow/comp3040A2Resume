@@ -63,10 +63,13 @@ cd path/to/your/repository
 12. replace the comment the ```# gem "github-pages"``` with ```gem "github-pages", "~> 227", group: :jekyll_plugins```
 13. Save the Gemfile
 14. Run ```bundle install``` from the command prompt
-15. Commit changes to the remote repository by running the follow command in the command prompt
+15. Open the file _config.yml 
+16. Add the following to the config file ```baseurl: /repo-name``` where repo-name is the name of your repository
+    - Note: you don't need to add this if your repository name is USERNAME.github.io where USERNAME is the username of your github account
+17. Commit changes to the remote repository by running the follow command in the command prompt
   - ```git add . ``` adds all the changes you have made to a staging area
   - ```git commit -m "Initial GitHub pages site with Jekyll"``` takes the changes that have are in the staging area and commits the changes. The -m is a flag and the text in double quotes that follow it is a message about the commited changes.
-16. Push your changes to the remote repository with the following command replacing BRANCH with your branch name
+18. Push your changes to the remote repository with the following command replacing BRANCH with your branch name
 ```
 git push -u origin BRANCH 
 ```
