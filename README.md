@@ -108,6 +108,9 @@ Cannot load such file -- webrick (LoadError)
 ```
 3. Navigate to the server address displayed in your browser 
 4. Add ```/RESUMENAME``` to the end of the URL, replacing RESUMENAME with the name of your resume file
+6. Add the following to the **Gemfile** if you are using a remote theme ``` gem "github-pages", group: :jekyll_plugins```
+5. You end product should like something like does. Although it will differ depending on your chosen theme.
+![Alt Text](/_gifs/resume.gif)
 
 ## View Your Static Page
 1. Navigate to the settings tab of your repository
@@ -122,25 +125,36 @@ Etter's Book "Modern Technical Writing" describes many concepts and practices of
 
 1. Use a lightweight markup language
 
-  - There are many benefits to using a markup language. First, it is human-readable, thus makes it easier for almost anyone to contribute. In Etter's book it is highlighted that having documentation that encourages others to contribute provides a great advantage. It allows you to take use the knowledge of more people.Second, unlike What You See Is What You Get(WYSIWYG) editors, lightweight markup languages are more portable and able to function on all operating systems. This again makes it easier for people to contribute as compatibility issues won’t block them. We can see effects of using a lightweight markup language is in the step **Step 4: Changing the Theme**. When do Step 4 you might have noticed how easy to was to know what each parameter did in the _config.yml. As we can see, this is the effect of a lightweight markup language like yml, even without knowing yml, it was intutive what needs to change for the theme to change.
+  - There are many benefits to using a markup language. First, it is human-readable, thus makes it easier for almost anyone to contribute. In Etter's book it is highlighted that having documentation that encourages others to contribute provides a great advantage. Etter(2016) argues that it allows you to take use the knowledge of more people. Etter(2016) also states that unlike What You See Is What You Get(WYSIWYG) editors, lightweight markup languages are more portable and able to function on all operating systems. This again makes it easier for people to contribute as compatibility issues won’t block them. We can see effects of using a lightweight markup language is in the step **Step 4: Changing the Theme**. When do Step 4 you might have noticed how easy to was to know what each parameter did in the _config.yml. As we can see, this is the effect of a lightweight markup language like yml, even without knowing yml, it was intutive what needs to change for the theme to change.
 
 2. Format a document with a static site generator
 
-  - Static sites are a simple, fast, and portable way to format your documents. Unlike full-on websites, static sites are much more lightweight. They have no database and are independent of server-side programs, as such, they are perfect for documents. In Etter’s book, the recommended way to create static websites is through and generator, such as Jekyll which we are using here. While we are using Jekyll it should be noted that the one recommended in Etter’s book is Sphinx, as was built for documentation and has a search built into the static site. In Etter’s book, it is noted that the selection of a theme is important. A theme with a good interface and a search function is important to the site. We have demostrated this concept through **Step 2** and **Step 4** where we set up a static site generator and select a theme.
+  - Etter(2016) states in their book that static sites are a simple, fast, and portable way to format your documents. Unlike full-on websites, static sites are much more lightweight. They have no database and are independent of server-side programs, as such, they are perfect for documents. In Etter’s book, the recommended way to create static websites is through and generator, such as Jekyll which we are using here. While we are using Jekyll it should be noted that the one recommended in Etter’s book is Sphinx, as was built for documentation and has a search built into the static site. In Etter’s book, it is noted that the selection of a theme is important. A theme with a good interface and a search function is important to the site. We have demostrated this concept through **Step 2** and **Step 4** where we set up a static site generator and select a theme.
 
 3. Share/host documents on a distributed version control system
 
-- Distributed version control systems (DVCS) are a great way to allow for concurrent work on the same file without any headaches. While most DVCS are overkill for the documentation workflow, it is still important to them as most developers with use them. According to Etter, the big appeal to DVCS is that they allow documentation and code to stay in sync, and it encourages developers to contribute as well. While Git/GitHub may seem complicated, however, after setting up local, the workflow really just boils down to making changes, committing, and pushing. We demonstrated this concept in **Step 1** where we set up the remote repository, in **Step 2** where we set up the local repositroy and we demostrated the workflow of changing/adding a file in **Step 3** where we uploaded the resume.
+- Distributed version control systems (DVCS) are a great way to allow for concurrent work on the same file without any headaches. Etter(2016) argues that while most DVCS are overkill for the documentation workflow, it is still important to them as most developers with use them. One of the big appeals to DVCS is that they allow documentation and code to stay in sync, and it encourages developers to contribute as well. While Git/GitHub may seem complicated, however, after setting up local, the workflow really just boils down to making changes, committing, and pushing. We demonstrated this concept in **Step 1** where we set up the remote repository, in **Step 2** where we set up the local repositroy and we demostrated the workflow of changing/adding a file in **Step 3** where we uploaded the resume.
 
+## More Resources
+ - [Modern Technical Writing: An Introduction to Software Documentation](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS)
+ - [Markdown Tutorial](https://www.markdowntutorial.com/)
+ - [Github Markdown Syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+ - [Markdown Readme Examples](https://github.com/matiassingers/awesome-readme)
+ - [More about Git/GitHub](https://docs.github.com/en/get-started/using-git/about-git)
 
 ## Authors and Acknowledgements
 
-  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
-    for the Code of Conduct
-  - [Creative Commons](https://creativecommons.org/) - Used to choose
-    the license
+  - [Modern Technical Writing: An Introduction to Software Documentation](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS) - Referenced for the concepts used
+  - [Minima](https://github.com/jekyll/minima) - Used to style static page
+  - Members of Group 14: Tanish Sood, Juan Armijos, Khush Bhrugesh Patel - Provided feedback for readme
 
 ## FAQ
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
+**Q:** Why is Markdown better than a word processor?
+**A:** Markdown is better than a word processor because it is portable and lightweight. You can open Markdown file with any text viewer on any operating system.
+
+**Q:** Why is my resume not showing up?
+**A:** The Resume is not showing possibly because of the file location. Ensure that the Resume is located in the root directory.
+
+**Q:** Why is my theme not applying to my site?
+**A:** The theme is not applying to your site likly because of path issues. To ensure that the paths are correct, be sure to add ```baseurl: /repo-name``` to your _config.yml file as stated in step 2.16. Repo-name is the name of your repository.
