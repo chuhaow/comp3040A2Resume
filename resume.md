@@ -8,7 +8,7 @@ Wench@myumanitoba.ca
  **Steptember 2019 - April 2024**
 
 
-  |GPA: 4.12/4.5 | Dean’s List | 
+  |GPA: 4.17/4.5 | Dean’s List | 
 
 ## SKILLS
 ---
@@ -27,13 +27,15 @@ _Canada Life_
 - Modernized an old application to current standards resulting in much better security and logging
 - Implemented an auto-launch feature to an existing application which resulted in time saved by users   
 
-&nbsp; **Waiter**	**・** **September 2020 - December 2021**
+&nbsp; **Software Developer**	**・** **September 2022 - Present**
 
 
-_Grunthal Garden_  
+_Ceridian_  
 
-- Provided effective communication between kitchen and front of house resulting in smooth, efficient, and exceptional customer service
-- Managed 30+ orders in a short period of time thus increasing efficiency and accuracy of orders, resulting in overall smooth operations and satisfied customers
+- Wrote and improved API documentation resulting overall better user experience 
+- Migrated code from a monolithic system to a micro-service resulting in increased product maintainability
+- Wrote unit tests and automated tests resulting in less bugs in final product
+  
 
 ## PROJECTS
 ---
@@ -56,8 +58,7 @@ _Grunthal Garden_
 - Wrote scripts which dealt with the interaction between asynchronous and synchronous functions
 
  **Unity 3D First-Person Game (C#, Unity, Blender)** **・** **July 2020**
-
-                                                             
-- Created a simple UI menu
-- Wrote scripts which handin player movement and player interaction with world objects
+                                    
+- Created simple UI elements that allow for effective navigation between levels and allowed for control over settings
+- Implemented functionality that allowed for player manipulation of world objects in various state
 - Created game VFX and game model using Unity post-processing and Blender
